@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaveUp.MainPage"
+             Title="SaveUp">
+    <StackLayout VerticalOptions="FillAndExpand" Padding="20">
+        <Label Text="Welcome to SaveUp!" HorizontalOptions="Center" VerticalOptions="StartAndExpand"/>
+        <StackLayout VerticalOptions="EndAndExpand" Spacing="20">
+            <Button Text="Add Item" Command="{Binding NavigateToAddItemPageCommand}" />
+            <Button Text="View List" Command="{Binding NavigateToListPageCommand}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
